@@ -1,0 +1,235 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+p,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  -webkit-moz-outline-style: none;
+  -moz-moz-outline-style: none;
+  -ms-moz-outline-style: none;
+  -o-moz-outline-style: none;
+  moz-outline-style: none;
+}
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.clearFix {
+  display: block;
+  *display: inline-block;
+  zoom: 1;
+}
+.clearFix:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+}
+.hide {
+  display: none;
+}
+.floatLeft {
+  float: left !important;
+}
+.floatRight {
+  float: right !important;
+}
+.textAlignC {
+  text-align: center;
+}
+.textAlignR {
+  text-align: right;
+}
+.verticalAlignM {
+  vertical-align: middle;
+}
+.verticalAlignT {
+  vertical-align: top;
+}
+html {
+  overflow-x: hidden;
+  color: #404040;
+  font-size: 10px;
+  background-color: #fff;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 1.2rem;
+  line-height: normal;
+  font-family: Helvetica Neue, PingFang SC, Source Han Sans CN, Lantinghei SC, Hiragino Sans GB, Microsoft YaHei, RobotoTTF sans-serif;
+}
+.weui-dialog__btn_primary {
+  color: #3361aa !important;
+}
+.weui-dialog__bd {
+  height: 40px;
+  overflow-y: auto;
+}
+.bolder-normal {
+  font-weight: normal !important;
+}
+.color-graier {
+  color: #808080 !important;
+}
+.borderBottom {
+  border-bottom: 1px solid #dbdbdb;
+}
+@media screen and (min-width: 385px) and (max-width: 413px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 384px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+html {
+  background-color: #f0f0f0;
+}
+.banner {
+  width: 100%;
+  background: url(../imgs/banner2.jpg);
+  height: 20%;
+  background-size: cover;
+  padding: 1rem;
+  color: #404040;
+  min-height: 10rem;
+}
+.gap {
+  margin-top: 1rem;
+}
+version {
+  color: #c0c0c0;
+  display: block;
+  margin-top: 2rem;
+}
+.menu .line {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu .line:first-child {
+  border-top: 1px solid #dbdbdb;
+}
+.menu .line div {
+  -webkit-box-flex: 1;
+          flex: 1;
+  border: 1px solid #dbdbdb;
+  border-right: none;
+  border-top: none;
+  height: 50px;
+  width: 33.33%;
+  text-align: center;
+}
+.menu .line div:first-child {
+  border-left: none;
+}
+.menu .line div span {
+  display: block;
+}
+.lineList {
+  background-color: #fff;
+}
+.lineList .line {
+  display: -webkit-box;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.lineList .line .lineCell {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+.centerTime {
+  color: #808080;
+  font-size: 1.1rem;
+}
+.tempDu {
+  vertical-align: top;
+  padding-top: 0.5rem;
+  display: inline-block;
+}
+.tempNum {
+  font-size: 3rem;
+  color: #2d3567;
+}
+.weatherDe span {
+  display: inline-block;
+  padding: 0 1rem;
+  color: white;
+  background: #2d3567;
+  border-radius: .5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.main {
+  min-height: 93%;
+}

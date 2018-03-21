@@ -1,0 +1,143 @@
+@import (reference) url(config);
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, p, td {
+    margin : 0; padding : 0; border : none;  outline: none;
+}
+div{
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+a {
+    text-decoration : none;
+    color:inherit;
+    &:hover:extend(a) { }
+
+                    //&:active {
+                    //    background-color : transparent
+                    //}
+    &:focus {
+        -webkit-moz-outline-style : none;
+        -moz-moz-outline-style    : none;
+        -ms-moz-outline-style     : none;
+        -o-moz-outline-style      : none;
+        moz-outline-style         : none;
+    }
+}
+img {
+    border : 0;
+}
+li {
+    list-style : none;
+}
+.inlineBlock{
+    display: inline-block;
+}
+.clearFix {
+    display  : block;
+    *display : inline-block;
+    zoom     : 1;
+    &:after {
+        content    : ".";
+        height     : 0;
+        clear      : both;
+        overflow   : hidden;
+        visibility : hidden;
+        display    : block;
+    }
+}
+.hide{
+    display: none;
+}
+.floatLeft {
+    float : left !important;
+}
+.floatRight {
+    float : right !important;
+}
+
+.textAlignC{
+    text-align: center;
+}
+.textAlignR{
+    text-align: right;
+}
+.verticalAlignM{
+    vertical-align: middle;
+}
+.verticalAlignT{
+    vertical-align: top;
+}
+.noSelect(){
+    -webkit-user-select : none; -moz-user-select : none; -ms-user-select : none; user-select : none;;
+}
+html {
+    overflow-x : hidden;
+    //字体顺序是：苹果自带，苹方、思源黑体、方正兰亭、冬青黑体，微软雅黑
+    color       : @fontColor-gray;
+    font-size: 10px;
+    background-color: #fff;
+}
+body {
+    width       : 100%;
+    overflow-x  : hidden;
+    font-size: @textSize-normal;
+    line-height: normal;
+    font-family :  Helvetica Neue,PingFang SC, Source Han Sans CN, Lantinghei SC, Hiragino Sans GB,Microsoft YaHei,RobotoTTF sans-serif;
+}
+//覆盖weui的类
+.weui-dialog__btn_primary{
+    color: @color-blue !important;
+}
+.weui-dialog__bd{
+    height: 40px;
+    overflow-y: auto;
+}
+.bolder-normal{
+    font-weight: normal !important;
+}
+.color-graier{
+    color:@fontColor-graier !important;
+}
+.gap(){
+    .gap{
+        margin-top: 1rem;
+    }
+}
+.borderBottom{
+    border-bottom: 1px solid @color-gray2;
+}
+
+@media screen and (min-width : 385px) and (max-width: 413px){
+    html {
+        font-size : 13px;
+    }
+}
+
+@media screen and (min-width : 414px) and (max-width: 768px){
+    html {
+        font-size : 14px;
+    }
+}
+
+@media screen and (min-width : 769px) {
+    html {
+        font-size : 14px;
+    }
+}
+
+@media screen and (min-width : 361px ) and (max-width: 384px) {
+    html {
+        font-size : 12px;
+    }
+}
+@media screen and (min-width : 321px ) and (max-width: 360px) {
+    html {
+        font-size : 11px;
+    }
+}
+@media screen and (min-width : 240px ) and (max-width: 320px) {
+    html {
+        font-size : 10px;
+    }
+}

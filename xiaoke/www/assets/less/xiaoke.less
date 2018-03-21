@@ -1,0 +1,88 @@
+@import (once) url(base);
+html{
+    background-color : @color-gray;
+}
+.banner{
+    width: 100%;
+    background: url(../imgs/banner2.jpg);
+    height: 20%;
+    background-size: cover;
+    padding: 1rem;
+    color: @fontColor-gray;
+    min-height: 10rem; 
+}
+.gap{
+    margin-top: 1rem;
+}
+version{
+    color: @fontColor-graiest;
+    display: block;
+    margin-top: 2rem;
+}
+.menu{
+    .line{
+        background-color: @color-white;
+        &:first-child{
+            border-top: 1px solid @color-gray2;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            flex: 1;
+            border: 1px solid @color-gray2;
+            border-right: none;
+            border-top: none;
+            height: 50px;
+            width: 33.33%;
+            text-align: center;
+            &:first-child{
+                border-left: none;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+    
+} 
+.lineList{
+    background-color: @color-white;
+    .line{
+        display: flex;
+        padding-left: @div-pad1;
+        padding-right: @div-pad1;
+        .lineCell{
+            padding-top: @div-pad1;
+            padding-bottom: @div-pad1;
+            flex: 1;
+        }
+    }
+}
+.centerTime{
+    color: @fontColor-graier;
+    font-size: @remarkSize-normal;
+}
+.tempDu{
+    vertical-align: top;
+    padding-top: 0.5rem;
+    display: inline-block;
+}
+.tempNum{
+    font-size: 3rem;
+    color: #2d3567;
+}
+.weatherDe{
+    span{
+        display: inline-block;
+        padding: 0 1rem;
+        color: white;
+        background: #2d3567;
+        border-radius: .5rem;
+        text-align: center;
+        font-size: @remarkSize-small;
+    }
+}
+.main{
+        // min-height: calc(100% - 4rem);
+        min-height: 93%;
+}
